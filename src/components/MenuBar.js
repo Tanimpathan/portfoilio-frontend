@@ -4,8 +4,10 @@ import { AiFillProfile } from "react-icons/ai";
 import { RiMessage2Fill } from "react-icons/ri";
 import { MdContacts } from "react-icons/md";
 import MenuItem from "./common/MenuItem";
+import { useNavigate } from "react-router-dom";
 
-function MenuBar(props) {
+function MenuBar({ history }) {
+  let navigate = useNavigate();
   const [selected, setSelected] = useState("about");
 
   function handleSelected(value) {
