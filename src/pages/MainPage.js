@@ -8,8 +8,14 @@ function MainPage(props) {
       <div className="background-gradient">
         <Bubbles />
       </div>
-      <div className="position-absolute w-100 h-100">
-        <MainComponents />
+      <div className="position-relative">
+        <div className="container-fluid">
+          <div className="row justify-content-center">
+            <div className="col-12 col-md-10 col-lg-10">
+              <MainComponents />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

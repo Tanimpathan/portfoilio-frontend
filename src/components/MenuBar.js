@@ -4,48 +4,40 @@ import { AiFillProfile } from "react-icons/ai";
 import { RiMessage2Fill } from "react-icons/ri";
 import { MdContacts } from "react-icons/md";
 import MenuItem from "./common/MenuItem";
-import { useNavigate } from "react-router-dom";
 
-function MenuBar({ history }) {
-  let navigate = useNavigate();
-  const [selected, setSelected] = useState("about");
-
-  function handleSelected(value) {
-    setSelected(value);
-  }
-
+function MenuBar({ handlePageShow, selectedItem }) {
   return (
     <ul className="portfolio-navbar">
       <MenuItem
-        selected={selected}
-        handleSelected={handleSelected}
+        selectedItem={selectedItem}
+        handlePageShow={handlePageShow}
         icon={<IoIosPerson />}
         label="About"
       />
 
       <MenuItem
-        selected={selected}
-        handleSelected={handleSelected}
+        selectedItem={selectedItem}
+        handlePageShow={handlePageShow}
         icon={<AiFillProfile />}
         label="Resume"
       />
 
       <MenuItem
-        selected={selected}
-        handleSelected={handleSelected}
+        selectedItem={selectedItem}
+        handlePageShow={handlePageShow}
         icon={<IoIosBrush />}
         label="Works"
       />
 
       <MenuItem
-        selected={selected}
-        handleSelected={handleSelected}
+        selectedItem={selectedItem}
+        handlePageShow={handlePageShow}
         icon={<RiMessage2Fill />}
         label="Blogs"
       />
       <MenuItem
-        selected={selected}
-        handleSelected={handleSelected}
+        selectedItem={selectedItem}
+        handlePageShow={handlePageShow}
         icon={<MdContacts />}
         label="Contact"
       />

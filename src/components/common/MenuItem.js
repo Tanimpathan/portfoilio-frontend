@@ -1,19 +1,23 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-function MenuItem({ selected, handleSelected, icon, label }) {
+function MenuItem({ handlePageShow, icon, label, selectedItem }) {
   return (
-    <li
-      className={`cursor-pointer nav-item ${
-        selected === label ? "text-pr-green " : ""
-      }`}
-      onClick={() => handleSelected(label)}
-    >
-      <div>
-        <span className="d-flex flex-column align-items-center menu-item-icon ">
-          <span className="mb-1">{icon}</span>
+    <li>
+      <Link
+        to={label}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        onClick={() => handlePageShow(label)}
+        className={`link ${selectedItem === label ? "active" : ""}`}
+      >
+        <div className="menu-content-wrapper">
+          <span className="mb-1 menu-item-icon">{icon}</span>
           <span className="menu-item-label">{label}</span>
-        </span>
-      </div>
+        </div>
+      </Link>
     </li>
   );
 }
