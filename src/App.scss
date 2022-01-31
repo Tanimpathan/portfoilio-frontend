@@ -1,11 +1,67 @@
 $PR_BLACK: #323232;
+$PR_PRIMARY_GREY: #646464;
 $PR_GREEN: #78cc6d;
 
 .text-pr-green {
   color: $PR_GREEN !important;
 }
+.text-primary-grey {
+  color: $PR_PRIMARY_GREY !important;
+}
+.text-secondary-grey {
+  color: #cac6c6;
+}
+.text-pr-black {
+  color: $PR_BLACK !important;
+}
+.bg-pr-green {
+  background: $PR_GREEN !important;
+}
+.section-title-text {
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.inner-section-title-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+.inner-section-normal-text {
+  font-size: 18px;
+}
+.inner-section-wrapper {
+  padding: 30px;
+}
 .cursor-pointer {
   cursor: pointer;
+}
+.border-bottom {
+  border-bottom: 1px solid #e9e8e8;
+}
+.border-right {
+  border-right: 1px solid #e9e8e8;
+}
+.duration-border {
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+.active-duration-border {
+  border-color: $PR_GREEN;
+  color: $PR_GREEN;
+}
+.card-inner-padding {
+  padding: 30px 20px 0 30px;
+}
+.medium-black-bold-text {
+  margin: 6px 0 0 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #323232;
+}
+.small-gray-text {
+  font-size: 14px;
+  color: #999999;
+  font-weight: 400;
 }
 
 body {
@@ -157,12 +213,12 @@ ul {
   text-decoration: none;
   text-align: center;
   padding: 10px 13px;
-  border-bottom: 1px solid #e9e8e8;
+  // border-bottom: 1px solid #e9e8e8;
 }
 .link:hover {
   color: $PR_GREEN;
 }
-.active {
+.active-menu-link {
   color: $PR_GREEN;
 }
 .menu-content-wrapper {
@@ -170,6 +226,42 @@ ul {
   flex-direction: column;
 }
 .inner-card {
+  background-color: white;
+}
+.inner-head-icon {
+  font-size: 28px;
+}
+.inner-head-title {
+  line-height: 14px;
+  color: $PR_BLACK;
+  font-size: 17px;
+  font-weight: 500;
+}
+.box-title {
+  font-size: 16px;
+  color: #323232;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.circular-progress {
+  width: 30%;
+}
+.margin-right-20 {
+  margin-right: 40%;
+}
+
+.client-pic-avatar {
+  background-image: url("./assets/images/man.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: $PR_GREEN;
 }
 
 .components-container {
@@ -207,6 +299,8 @@ ul {
   .profile-card {
     background-color: white;
     position: relative;
+    z-index: 1;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 5%);
     .profile-photo {
       width: 100%;
       height: 50%;
@@ -244,8 +338,95 @@ ul {
       bottom: 0;
       .cv-content {
         display: flex;
-        justify-content: space-around;
+        border-top: 1px solid #e9e8e8;
+        p {
+          margin: 0;
+          padding: 10px 0;
+        }
       }
+    }
+  }
+
+  .title {
+    color: $PR_BLACK;
+    margin: 0 0 0 0;
+    padding: 30px 0 30px 30px;
+    font-size: 20px;
+    line-height: 21px;
+    // min-height: 51px;
+    font-weight: 600;
+  }
+
+  .first-word {
+    color: $PR_GREEN;
+  }
+
+  .about-me-section {
+    height: 73vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .about-me-content {
+      .personal-details {
+        padding: 15px 0;
+        border-bottom: 1px solid #e9e8e8;
+      }
+      .my-services {
+        .icon {
+          color: white;
+          background-color: $PR_GREEN;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          border-radius: 50%;
+          line-height: 60px;
+        }
+      }
+      .clients-experience {
+        .clients-words {
+        }
+        .client-photo {
+          background-image: url("./assets/images/man.jpg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+        }
+        .client-name {
+          margin: 6px 0 0 0;
+          font-size: 17px;
+          font-weight: 500;
+          color: #323232;
+        }
+        .client-job {
+          font-size: 14px;
+          color: #999999;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .resume-section {
+    height: 73vh;
+    color: $PR_BLACK;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .blogs-section {
+    height: 73vh;
+    color: $PR_BLACK;
+  }
+
+  .contact-section {
+    height: 73vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .map-location {
+      width: 100%;
+      height: 240px;
     }
   }
 }

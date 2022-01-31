@@ -4,6 +4,8 @@ import Blogs from "./Blogs";
 import MenuBar from "./MenuBar";
 import ProfileCard from "./ProfileCard";
 import "animate.css";
+import Resume from "./Resume";
+import Contact from "./Contact";
 
 function MainComponents(props) {
   const [selectedNav, setSelectedNav] = useState("About");
@@ -15,7 +17,7 @@ function MainComponents(props) {
   return (
     <div className="components-container">
       <div className="row h-100 align-items-center">
-        <div className="col-6">
+        <div className="col-5 p-0">
           <div className="d-flex">
             <div style={{ marginRight: "10px", height: "80vh" }}>
               <MenuBar
@@ -28,9 +30,13 @@ function MainComponents(props) {
             </div>
           </div>
         </div>
-        <div className="col-6">
-          <Blogs selectedItem={selectedNav} />
+        <div className="col-7 p-0">
+          {/* <div className="card-wrap"> */}
           <AboutMe selectedItem={selectedNav} />
+          <Blogs selectedItem={selectedNav} />
+          <Resume selectedItem={selectedNav} />
+          <Contact selectedItem={selectedNav} />
+          {/* </div> */}
         </div>
       </div>
     </div>

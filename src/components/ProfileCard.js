@@ -48,8 +48,13 @@ function ProfileCard(props) {
       </div>
       <div className="cv-section w-100">
         <div className="cv-content w-100">
-          <p>Download Cv</p>
-          <p>Contact me</p>
+          <p
+            className="w-50 text-center"
+            style={{ borderRight: "1px solid #e9e8e8" }}
+          >
+            Download Cv
+          </p>
+          <p className="w-50 text-center">Contact me</p>
         </div>
       </div>
     </div>
