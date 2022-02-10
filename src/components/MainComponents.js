@@ -6,6 +6,7 @@ import ProfileCard from "./ProfileCard";
 import "animate.css";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import Works from "./Works";
 
 function MainComponents(props) {
   const [selectedNav, setSelectedNav] = useState("About");
@@ -31,12 +32,11 @@ function MainComponents(props) {
           </div>
         </div>
         <div className="col-7 p-0">
-          {/* <div className="card-wrap"> */}
           <AboutMe selectedItem={selectedNav} />
           <Blogs selectedItem={selectedNav} />
           <Resume selectedItem={selectedNav} />
           <Contact selectedItem={selectedNav} />
-          {/* </div> */}
+          <Works selectedItem={selectedNav} />
         </div>
       </div>
     </div>

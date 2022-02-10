@@ -81,6 +81,19 @@ ul {
   margin-bottom: 0px;
   padding-left: 0px;
 }
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: transparent;
+}
 
 .background-gradient {
   background: linear-gradient(to bottom right, #50a3a2 0%, #78cc6d 100%);
@@ -196,10 +209,9 @@ ul {
 }
 
 .hidden {
-  opacity: 0 !important;
-  // visibility: hidden !important;
+  // opacity: 0 !important;
   display: none;
-  z-index: 9 !important;
+  // z-index: 9 !important;
 }
 .active-component {
   opacity: 1;
@@ -262,6 +274,23 @@ ul {
 }
 .carousel-indicators [data-bs-target] {
   background-color: $PR_GREEN;
+}
+
+.half-full-input {
+  width: 48% !important;
+}
+.grey-button {
+  padding: 10px 30px;
+  display: inline-block;
+  width: auto;
+  background: #eeeeee;
+  border-radius: 4px;
+  border: none;
+  color: $PR_BLACK;
+}
+.grey-button:hover {
+  color: $PR_GREEN;
+  transition: 0.5s;
 }
 
 .components-container {
@@ -429,6 +458,17 @@ ul {
       height: 240px;
     }
   }
+
+  .works-section {
+    height: 73vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .work-card {
+      box-shadow: 10px 10px 40px rgb(0 0 0 / 8%);
+      border: none;
+    }
+  }
 }
 
 /*******************************************
@@ -442,6 +482,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .half-full-input {
+    width: 100% !important;
+  }
   .components-container {
     display: block;
 

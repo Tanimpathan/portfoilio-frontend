@@ -64,13 +64,28 @@ function Contact({ selectedItem }) {
               <span className="first-word">Contact </span>Form
             </h4>
             <div className="row">
-              <div className="col-12 col-md-6">
+              <div className="col-12">
                 <div className="card-inner-padding">
-                  <input
-                    type="text"
-                    name="clientName"
-                    placeholder="Full Name"
-                  />
+                  <div className="d-flex justify-content-between pb-4">
+                    <input
+                      type="text"
+                      name="clientName"
+                      placeholder="Full Name"
+                      className="half-full-input form-control"
+                    />
+                    <input
+                      type="email"
+                      name="clientEmail"
+                      placeholder="Email"
+                      className="half-full-input form-control"
+                    />
+                  </div>
+                  <textarea
+                    className="form-control mb-4"
+                    placeholder="Enter your message"
+                    style={{ height: "100px" }}
+                  ></textarea>
+                  <button className="grey-button mb-4">Send message</button>
                 </div>
               </div>
             </div>
