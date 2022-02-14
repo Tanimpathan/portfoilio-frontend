@@ -263,6 +263,10 @@ ul {
   margin-right: 40%;
 }
 
+.component-tablet-mobile-view {
+  display: none;
+}
+
 .client-pic-avatar {
   background-image: url("./assets/images/man.jpg");
   background-position: center;
@@ -482,6 +486,15 @@ ul {
 }
 
 @media (max-width: 767px) {
+  .hidden {
+    display: block;
+  }
+  .component-tablet-mobile-view {
+    display: block;
+  }
+  .component-desktop-view {
+    display: none;
+  }
   .half-full-input {
     width: 100% !important;
   }

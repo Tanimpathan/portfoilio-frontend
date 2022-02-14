@@ -18,7 +18,7 @@ function MainComponents(props) {
   return (
     <div className="components-container">
       <div className="row h-100 align-items-center">
-        <div className="col-5 p-0">
+        <div className="col-11 col-lg-5 col-xl-5 p-0">
           <div className="d-flex">
             <div style={{ marginRight: "10px", height: "80vh" }}>
               <MenuBar
@@ -28,10 +28,17 @@ function MainComponents(props) {
             </div>
             <div className="w-100">
               <ProfileCard />
+              <div className="col-7 p-0 component-tablet-mobile-view">
+                <AboutMe selectedItem={selectedNav} />
+                <Blogs selectedItem={selectedNav} />
+                <Resume selectedItem={selectedNav} />
+                <Contact selectedItem={selectedNav} />
+                <Works selectedItem={selectedNav} />
+              </div>
             </div>
           </div>
         </div>
-        <div className="col-7 p-0">
+        <div className="col-7 p-0 component-desktop-view">
           <AboutMe selectedItem={selectedNav} />
           <Blogs selectedItem={selectedNav} />
           <Resume selectedItem={selectedNav} />
