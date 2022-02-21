@@ -18,9 +18,18 @@ function MainComponents(props) {
   return (
     <div className="components-container">
       <div className="row h-100 align-items-center">
-        <div className="col-11 col-lg-5 col-xl-5 p-0">
-          <div className="d-flex">
-            <div style={{ marginRight: "10px", height: "80vh" }}>
+        <div className="col-12 col-lg-5 col-xl-5 p-0">
+          <div className="component-tablet-mobile-view">
+            <MenuBar
+              handlePageShow={handlePageShow}
+              selectedItem={selectedNav}
+            />
+          </div>
+          <div className="d-flex menu-profile-card mb-3">
+            <div
+              style={{ marginRight: "10px" }}
+              className="component-desktop-view"
+            >
               <MenuBar
                 handlePageShow={handlePageShow}
                 selectedItem={selectedNav}
@@ -28,7 +37,7 @@ function MainComponents(props) {
             </div>
             <div className="w-100">
               <ProfileCard />
-              <div className="col-7 p-0 component-tablet-mobile-view">
+              <div className="component-tablet-mobile-view">
                 <AboutMe selectedItem={selectedNav} />
                 <Blogs selectedItem={selectedNav} />
                 <Resume selectedItem={selectedNav} />

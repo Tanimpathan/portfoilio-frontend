@@ -11,7 +11,7 @@ function MainPage(props) {
       <div className="position-relative">
         <div className="container-fluid">
           <div className="row justify-content-center">
-            <div className="col-12 col-lg-11 col-xl-10 col-xxl-9">
+            <div className="col-12 col-lg-11 col-xl-10 col-xxl-9 p-0">
               <MainComponents />
             </div>
           </div>

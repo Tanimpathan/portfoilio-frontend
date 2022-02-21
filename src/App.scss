@@ -300,6 +300,10 @@ ul {
 .components-container {
   height: 100vh;
 
+  .menu-profile-card {
+    height: 80vh;
+  }
+
   .portfolio-navbar {
     background-color: white !important;
     border-radius: 5px;
@@ -483,6 +487,40 @@ ul {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .hidden {
+    display: block;
+  }
+  .component-tablet-mobile-view {
+    display: block;
+  }
+  .component-desktop-view {
+    display: none;
+  }
+  .components-container {
+    display: block;
+    .portfolio-navbar {
+      display: flex;
+      width: 100%;
+      li {
+        flex: 1;
+      }
+    }
+    .about-me-section {
+      height: auto;
+    }
+    .resume-section {
+      height: auto;
+    }
+    .blogs-section {
+      height: auto;
+    }
+    .contact-section {
+      height: auto;
+    }
+    .works-section {
+      height: auto;
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -500,12 +538,27 @@ ul {
   }
   .components-container {
     display: block;
-
     .portfolio-navbar {
       display: flex;
-      .nav-item {
+      width: 100%;
+      li {
         flex: 1;
       }
+    }
+    .about-me-section {
+      height: auto;
+    }
+    .resume-section {
+      height: auto;
+    }
+    .blogs-section {
+      height: auto;
+    }
+    .contact-section {
+      height: auto;
+    }
+    .works-section {
+      height: auto;
     }
   }
 }
