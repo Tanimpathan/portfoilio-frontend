@@ -21,7 +21,7 @@ function AboutMe({ selectedItem }) {
             <div className="col-12 col-md-6 border-right">
               <div className="card-inner-padding">
                 <p className="text-primary-grey inner-section-normal-text">
-                  I am Tanim Pathan, web designer from USA, California. I have
+                  I am Tanim Pathan, web designer from Bangladesh, Dhaka. I have
                   rich experience in web site design and building and
                   customization, also I am good at wordpress. I love to talk
                   with you about our unique.
@@ -83,7 +83,7 @@ function AboutMe({ selectedItem }) {
 
         <div className="clients-experience">
           <h4 className="title border-bottom">
-            <span className="first-word">Clients</span> Experience
+            <span className="first-word">Q</span>uote
           </h4>
           <div className="row">
             <div className="col-12">

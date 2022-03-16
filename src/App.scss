@@ -454,6 +454,8 @@ ul {
   .blogs-section {
     height: 73vh;
     color: $PR_BLACK;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .contact-section {

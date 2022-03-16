@@ -112,3 +112,9 @@ export const MY_BUSINESS_INFO = [
   { propertyName: "Email", propertyValue: "tanimpathan98@gmail.com" },
   { propertyName: "Freelance", propertyValue: "Available" },
 ];
+
+export const MY_PERSONAL_AND_SOCIAL_INFO = {
+  profileImage: "/assets/images/man.jpg",
+  fullName: "Tanim Pathan",
+  jobType: ["Freelancer", "Web Developer", "Problem Solver"],
+};
